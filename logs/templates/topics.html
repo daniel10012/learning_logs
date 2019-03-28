@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ol>
+        {% for topic in topics %}
+        <li>{{topic}}</li>
+        {% endfor %}
+    </ol>
+
+    <button><a href="{% url 'logs:new_topic' %}">add a topic here</a></button>
+
+{% endblock content %}
+
